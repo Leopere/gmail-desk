@@ -1,0 +1,21 @@
+{
+  "name": "gmail-desk",
+  "version": "0.1.0",
+  "description": "Electron desktop app and macOS helper for Gmail account switching.",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "node scripts/generate-icons.js",
+    "check": "find src scripts -name '*.js' -print0 | xargs -0 -n1 node --check",
+    "verify": "npm run build && npm run check",
+    "start": "npm run build && electron .",
+    "package": "./scripts/package.sh",
+    "package:mac": "./scripts/package.sh",
+    "install:mac": "./scripts/install.sh"
+  },
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/packager": "^20.0.1",
+    "electron": "^42.4.0"
+  }
+}
