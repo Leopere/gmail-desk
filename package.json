@@ -1,6 +1,6 @@
 {
   "name": "gmail-desk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Electron desktop app and macOS helper for Gmail account switching.",
   "main": "src/main.js",
   "scripts": {
